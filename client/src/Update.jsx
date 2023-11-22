@@ -80,7 +80,7 @@ export default function Update() {
           />
           <div className='w-full  border-2 my-1 py-2 px-3 rounded-xl text-gray-600'>
           <label htmlFor="jobs">Sectors you are currently involved in ?</label>
-          <select  id="jobs" onChange={handleSelectChange} value={selectedOption}>
+          <select  className='w-[220px] md:w-auto'    id="jobs" onChange={handleSelectChange} value={selectedOption}>
             {data.map(data=><option key={data} value={data}>{data}</option>)}
           </select>
         </div>
