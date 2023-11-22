@@ -6,7 +6,7 @@ const User = require('./model/user.js');
 const port = 5000;
 const app = express();
 const corsOptions = {
-  origin: ['http://127.0.0.1:5173'],
+  origin: ['http://127.0.0.1:5173','https://task-neon-two.vercel.app/'],
   credentials: true,
 };
 

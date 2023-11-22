@@ -27,7 +27,7 @@ export default function Update() {
         if (!selectedOption) {
           toast.error("Please select option");
         } else {
-          axios.put('http://localhost:5000/api/register', {
+          axios.put('https://task-neon-two.vercel.app/api/register', {
               name: name,
               selectedOption: selectedOption
               ,userName:userName,

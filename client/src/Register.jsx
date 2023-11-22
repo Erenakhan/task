@@ -39,7 +39,7 @@ export default function Register() {
     if (!selectedOption){
       toast.error("Please select option");
     }else{
-    axios.post('http://localhost:5000/api/register',
+    axios.post('https://task-neon-two.vercel.app/api/register',
      { name : name, selectedOption : selectedOption, isChecked : isChecked,userName:userName })
       .then((response) => {
         console.log('Registration successful:', response.data);
